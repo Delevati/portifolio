@@ -2,6 +2,7 @@
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -52,6 +53,7 @@ nav ul li a {
     box-sizing: border-box;
     width: calc(100% - 40px);
     height: calc(100vh - 40px);
+    overflow: hidden;
 }
 
 /* ICONES */
@@ -122,21 +124,146 @@ nav ul li a {
     z-index: 1;
     text-align: left;
     margin-left: 20px;
+    margin-right: 20px;
 }
 
-/* WINDOWLINE DA PAGINA 2 */
+/* SECTION E WINDOWLINE DA PAGINA 2 */
+#section-below {
+    padding: 20px;  /* Adiciona um preenchimento ao redor da seção */
+    max-width: 1000px;  /* Limita a largura máxima da seção */
+    margin: auto;  /* Centraliza a seção */
+    font-size: 18px;  /* Aumenta o tamanho da fonte para 20px */
+}
+
+#section-below p {
+    margin-bottom: 10px 10px;  /* Aumenta a margem acima e abaixo para 30px, mantendo 20px à esquerda e à direita */
+    padding: 15px 0;  /* Preenchimento no topo e no fundo de cada parágrafo */
+    line-height: 1.6;  /* Espaçamento entre linhas */
+    text-align: justify;  /* Justifica o texto */
+    text-indent: 30px;  /* Indentação da primeira linha */
+}
+
 .windowline2 {
     margin: 20px;
     border: 1px solid #fff;
     box-sizing: border-box;
     width: calc(100% - 40px);
     height: calc(100vh - 40px);
+    overflow: auto;  /* Para permitir a rolagem caso o conteúdo ultrapasse o tamanho da div */
+}
+
+.fotoLuryan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotoLuryan img {
+    max-width: 250px;
+    border-radius: 12px;
+    padding: 10px;
+    border-radius: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 
+        0 0 5px #fff, 
+        0 0 10px #fff, 
+        0 0 15px red, 
+        0 0 20px red, 
+        0 0 25px red, 
+        0 0 30px red, 
+        0 0 35px red;
 }
 
 
+
+
+
+/* RODAPÉ */
 footer {
     text-align: center;
     padding: 1rem 0;
     background-color: #333;
     color: azure;
 }
+
+
+
+
+/* MEDIA QUERIES */
+
+/* Estilos para tablets */
+@media (max-width: 1024px) {
+    body {
+        font-size: 14px;
+    }
+    .icon-neon {
+        font-size: 80px;
+    }
+    nav ul li {
+        margin-right: 10px;
+    }
+    #section-below p {
+        margin-right: 20px;
+    }
+    .text-section {
+        overflow: hidden;
+    }
+}
+
+/* Estilos para smartphones em modo paisagem */
+@media (max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+    .icon-neon {
+        font-size: 60px;
+    }
+    nav ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    #section-below p {
+        margin-right: 20px;
+    }
+    .text-section {
+        overflow: hidden;
+        font-size: 1.5em;
+    }
+}
+
+
+/* Estilos para smartphones em modo retrato */
+@media (max-width: 600px) {
+    /* Para empilhar os ícones */
+    .icon-container {
+        transition: flex-direction 0.5s ease;
+      }
+
+    .specifc-img {
+        width: 20vw;
+        height: auto;
+    }
+      
+    .icon-neon {
+        font-size: 37vw;  /* tamanho reduzido drasticamente */
+    }
+
+    /* Para o texto não ultrapassar o .windowline */
+    #sobre {
+        position: relative;
+        width: calc(100% - 2rem);
+        box-sizing: border-box;
+    }
+
+    .windowline, .windowline2 {
+        width: calc(100% - 40px);
+        height: auto;
+        padding: 20px;
+        overflow: auto;
+    }
+}
+
+
+

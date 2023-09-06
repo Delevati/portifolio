@@ -266,46 +266,53 @@ nav ul li a {
   border: 1px solid #fff;
   box-sizing: border-box;
   width: calc(100% - 20px);
-  height: calc(100vh - 20px);
+  height: calc(100% - 20px);
   overflow: hidden;
 }
 .windowLine3 h2 {
   margin: 15px;
 }
-
 .carousel-inner img {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
+  border-radius: 5px;
 }
+.carousel-inner img.carousel-image {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: black;
-  border-radius: 50%;
-  padding: 10px;
-}
-#imageCarousel {
-  border: 4px solid #f1f1f1;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 5px;
 }
 
-.carousel-inner img:hover {
-  transform: scale(1.05);
-}
+#imageCarousel,
+#imageCarousel2 {
+    border: 4px solid #f1f1f1;
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     width: 50%; 
+    margin: 20px;
+  }
+    
 
 .carousel-control-prev-icon:hover,
 .carousel-control-next-icon:hover {
   background-color: grey;
 }
 
-.carousel-caption {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 15px;
-  border-radius: 15px;
+.carousel-container {
+  display: flex;
+  justify-content: space-between;
 }
-.carousel-inner {
-  transition: transform 1s ease;
-}
+
+.descricaoprojeto {
+    margin-top: 20px;
+    font-size: 1.2em;
+    margin: auto 20px;
+  }
+  
+
+
 
 /* RODAPÉ */
 footer {

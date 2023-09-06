@@ -426,6 +426,7 @@ footer {
       padding: 1rem;
       z-index: 2; /* Novo */
       position: relative; /* Novo */
+      display:none;
     }
 
   .icon-neon {
@@ -445,6 +446,7 @@ footer {
 
   .neon-wave {
     margin-top: 20px;
+    display:none;
   }
   .midclass {
     display: block;
@@ -471,12 +473,16 @@ footer {
       padding: 1rem;
       z-index: 2; /* Novo */
       position: relative; /* Novo */
+      display: none;
     }
 
     .icon-neon {
         animation: neon-glow-icons 1.5s ease-in-out infinite alternate;
         font-size: 10em;
         margin-bottom: 250px;
+    }
+    .neon-wave{
+      display: none;
     }
 
     .img-icon {
@@ -522,12 +528,14 @@ footer {
   }
   .text-section{
     z-index: 0;
+    display: none;
   }
   .apresentacao {
     margin-top: 20px;
   }
   .neon-wave {
     margin-top: 60px;
+    display: none;
   }
   .midclass {
     display: block;

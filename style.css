@@ -494,8 +494,16 @@ footer {
   /* Estilos para telas com altura máxima de 300px */
   .icon-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 40px);
     margin-top: 10px;
     margin-bottom: 10px;
+    z-index: 1; 
+    position: relative; 
+  }
+  #sobre {
+    display: none;
   }
   .text-section{
     z-index: 0;
@@ -527,8 +535,6 @@ footer {
   #imageCarousel2 {
     width: 100%;
 }
-#sobre {
-  display: none;
-}
+
 }
 

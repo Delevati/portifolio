@@ -163,6 +163,11 @@ nav ul li a {
   height: auto;
   overflow: visible;
 }
+.nome{
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
 
 #section-below {
   padding: 20px;

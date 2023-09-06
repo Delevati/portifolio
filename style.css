@@ -52,7 +52,7 @@ nav ul li a {
   box-sizing: border-box;
   width: calc(100% - 20px);
   height: calc(100vh - 20px);
-  overflow: hidden; /* Alterado para hidden */
+  overflow: hidden;
 }
 
 /* ICONES */
@@ -93,12 +93,12 @@ nav ul li a {
 
 .page-one {
   display: flex;
-  flex-direction: column; /* ou 'row' para alinhamento lateral */
+  flex-direction: column;
 }
 
 .windowline,
 #sobre {
-  flex-grow: 1; /* isso faz cada elemento ocupar todo o espaço disponível */
+  flex-grow: 1; 
 }
 
 .text-section {
@@ -210,14 +210,14 @@ nav ul li a {
 
 .columntext {
     flex: 1;
-    min-width: calc(50% - 20px);  /* O valor "20px" pode ser ajustado conforme suas necessidades */
+    min-width: calc(50% - 20px);  
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 .columntext2 {
     flex: 1;
-    min-width: calc(50% - 20px);  /* O valor "20px" pode ser ajustado conforme suas necessidades */
+    min-width: calc(50% - 20px);  
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 100px;
@@ -229,18 +229,18 @@ nav ul li a {
 }
 
 .sublist {
-    font-size: 12px;  /* Fonte menor */
-    list-style-type: none;  /* Remover marcadores de lista */
+    font-size: 12px;  
+    list-style-type: none;  
 }
 
 .sublist li {
-    display: inline;  /* Exibir subitens lado a lado */
-    margin-right: 10px;  /* Espaçamento à direita para separar os itens */
+    display: inline;  
+    margin-right: 10px;  
 }
 
 .sublist li::before {
-    content: '-';  /* Adicionar um traço antes de cada subitem */
-    margin-right: 3px;  /* Espaçamento à direita do traço */
+    content: '-';  
+    margin-right: 3px;  
 }
 
 .columntext3 {
@@ -388,13 +388,13 @@ footer {
       align-items: center;
       height: calc(100vh - 40px);
       margin-top: 10px;
-      z-index: 1; /* Novo */
-      position: relative; /* Novo */
+      z-index: 1; 
+      position: relative; 
     }
     .text-section {
       padding: 1rem;
-      z-index: 2; /* Novo */
-      position: relative; /* Novo */
+      z-index: 2; 
+      position: relative; 
       display:none;
     }
   .icon-neon {
@@ -420,11 +420,11 @@ footer {
     display: block;
 }
 .columntext1 {
-  margin-left: 20px; /* Ajustar conforme necessário */
+  margin-left: 20px;
 }
 
 .columntext2 {
-  margin: 0 auto; /* Centraliza horizontalmente */
+  margin: 0 auto;
 }
 .carousel-container {
   display: flex;
@@ -439,8 +439,8 @@ footer {
 @media (max-width: 550px) {
     .text-section {
       padding: 1rem;
-      z-index: 2; /* Novo */
-      position: relative; /* Novo */
+      z-index: 2;
+      position: relative;
       display: none;
     }
     #sobre {
@@ -467,18 +467,18 @@ footer {
       align-items: center;
       height: calc(100vh - 40px);
       margin-top: 10px;
-      z-index: 1; /* Novo */
-      position: relative; /* Novo */
+      z-index: 1; 
+      position: relative; 
       }
     .midclass {
         display: block;
     }
     .columntext1 {
-      margin-left: 20px; /* Ajustar conforme necessário */
+      margin-left: 20px; 
     }
     
     .columntext2 {
-      margin: 0 auto; /* Centraliza horizontalmente */
+      margin: 0 auto; 
     }
     .carousel-container {
       display: flex;
@@ -493,7 +493,7 @@ footer {
 @media (max-height: 420px) {
   /* Estilos para telas com altura máxima de 300px */
   .icon-container {
-    display: none;
+    display: flex;
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -512,11 +512,11 @@ footer {
     display: block;
   }
   .columntext1 {
-    margin-left: 20px; /* Ajustar conforme necessário */
+    margin-left: 20px; 
   }
   
   .columntext2 {
-    margin: 0 auto; /* Centraliza horizontalmente */
+    margin: 0 auto; 
   }
   .carousel-container {
     display: flex;

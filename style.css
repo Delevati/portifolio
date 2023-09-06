@@ -433,7 +433,6 @@ footer {
       position: relative; /* Novo */
       display:none;
     }
-
   .icon-neon {
     animation: neon-glow-icons 1.5s ease-in-out infinite alternate;
     font-size: 130px;
@@ -478,6 +477,9 @@ footer {
       padding: 1rem;
       z-index: 2; /* Novo */
       position: relative; /* Novo */
+      display: none;
+    }
+    #sobre {
       display: none;
     }
 
@@ -560,6 +562,9 @@ footer {
   #imageCarousel,
   #imageCarousel2 {
     width: 100%;
+}
+#sobre {
+  display: none;
 }
 }
 

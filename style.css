@@ -344,7 +344,11 @@ footer {
     overflow: hidden;
   }
 }
-
+@media (min-width: 769px) {
+ .nome {
+  display: none;
+ }
+}
 @media (max-width: 768px) {
   body {
     font-size: 12px;
@@ -376,46 +380,6 @@ footer {
     margin: 10px;
   }
 }
-
-/*  @media (max-width: 700px) {
-     .icon-container {
-        transition: flex-direction 0.5s ease;
-        margin-bottom: 5px; 
-    }
-    .text-section {
-        margin: 5px ;  
-    }
-    .specifc-img {
-        width: 20vw;
-        height: auto;
-    }
-    .icon-neon {
-        font-size: 37vw;
-        margin-top: 0; 
-        margin-bottom: 0;
-    }
-    #sobre {
-        position: relative;
-        width: calc(100% - 10px);
-        box-sizing: border-box;
-    }
-    .windowline, .windowline2 {
-        width: calc(100% - 40px);
-        height: auto;
-        padding: 20px;
-        overflow: auto;
-    }
-}  
-.text-section {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center; 
-    padding: 2rem;
-    box-sizing: border-box;
-    height: 100%; 
-} */
 
 @media (max-width: 700px) {
     .icon-container {

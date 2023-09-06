@@ -12,15 +12,15 @@ function hideAllIcons() {
 let currentIcon = 0;
 
 function cycleIcons() {
-  hideAllIcons(); 
-  icons[currentIcon].style.display = 'block'; 
+  hideAllIcons();
+  icons[currentIcon].style.display = 'block';
   currentIcon = (currentIcon + 1) % icons.length;
 }
 
 function startCycling() {
   if (!intervalId) {
     hideAllIcons();
-    icons[0].style.display = 'block'; 
+    icons[0].style.display = 'block';
     intervalId = setInterval(cycleIcons, 1000);
   }
 }
@@ -49,6 +49,18 @@ mediaQuery.addEventListener("change", (e) => {
   }
 });
 
+/* SCROLL DO LINK 'AQUI' WINDOWLINE2 */
+document.addEventListener("DOMContentLoaded", function(){
+  var scrollLinks = document.querySelectorAll('.scroll-link');
+  scrollLinks.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      var id = this.getAttribute('href').substring(1);
+      var target = document.getElementById(id);
+      target.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+});
 
 
 

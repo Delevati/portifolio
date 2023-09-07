@@ -315,6 +315,13 @@ nav ul li a {
     font-size: 1.2em;
     margin: auto 20px;
   }
+
+  .vid video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
   
 
 /* RODAPÉ */

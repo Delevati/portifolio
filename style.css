@@ -326,37 +326,85 @@ nav ul li a {
     font-size: 1.2em;
     margin: auto 20px;
   }
-  
-  h2 {
-    margin-bottom: 10px;
-  }
-  
   .image-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: calc(100vh - 40px);
+    width: 100%;
   }
   
   .image-wrapper {
     flex: 1;
     margin: 10px;
+    text-align: center;
   }
   
   .image-item {
     max-width: 100%;
     height: auto;
+    margin: 0 auto;
   }
-
-
+  
+  .image-wrapper1 .image-item {
+    width: 80%;  
+  }
+  
+  .image-wrapper2 .image-item {
+    width: 65%;
+  }
+  
+  
 
 /* RODAPÉ */
 footer {
-  text-align: center;
-  padding: 1rem 0;
   background-color: #333;
-  color: azure;
+  color: white;
+  padding: 10px 0;  /* Diminuí a altura aqui */
+  text-align: center;
+  border-top: 3px solid #444; /* Adicionei uma borda para destacar o rodapé */
 }
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-name h1 {
+  margin: 0;
+  font-size: 20px;  /* Diminuí o tamanho da fonte para economizar espaço */
+  font-weight: 600; /* Adicionei um peso de fonte para dar um pouco mais de destaque */
+}
+
+.project-name p {
+  margin: 3px 0;  /* Diminuí a margem */
+  font-size: 14px;  /* Diminuí o tamanho da fonte */
+}
+
+.columntext3 h2 {
+  margin: 5px 0;
+  font-size: 18px;  /* Diminuí o tamanho da fonte */
+}
+
+.columntext3 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;  /* Retirei as margens para economizar espaço */
+}
+
+.columntext3 ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;  /* Adicionei padding para tornar o clique mais fácil */
+  border-radius: 3px;  /* Adicionei bordas arredondadas */
+}
+
+.columntext3 ul li a:hover {
+  text-decoration: none;
+  background-color: #555;  /* Adicionei um fundo ao pairar para dar um feedback visual */
+}
+
 
 /* MEDIA QUERIES */
 

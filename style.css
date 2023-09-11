@@ -360,9 +360,9 @@ nav ul li a {
 footer {
   background-color: #333;
   color: white;
-  padding: 10px 0;  /* Diminuí a altura aqui */
+  padding: 10px 0;  
   text-align: center;
-  border-top: 3px solid #444; /* Adicionei uma borda para destacar o rodapé */
+  border-top: 3px solid #444; 
 }
 
 .footer-container {
@@ -373,36 +373,36 @@ footer {
 
 .project-name h1 {
   margin: 0;
-  font-size: 20px;  /* Diminuí o tamanho da fonte para economizar espaço */
-  font-weight: 600; /* Adicionei um peso de fonte para dar um pouco mais de destaque */
+  font-size: 20px; 
+  font-weight: 600; 
 }
 
 .project-name p {
-  margin: 3px 0;  /* Diminuí a margem */
-  font-size: 14px;  /* Diminuí o tamanho da fonte */
+  margin: 3px 0;  
+  font-size: 14px;  
 }
 
 .columntext3 h2 {
   margin: 5px 0;
-  font-size: 18px;  /* Diminuí o tamanho da fonte */
+  font-size: 18px; 
 }
 
 .columntext3 ul {
   list-style: none;
   padding: 0;
-  margin: 0;  /* Retirei as margens para economizar espaço */
+  margin: 0; 
 }
 
 .columntext3 ul li a {
   color: white;
   text-decoration: none;
-  padding: 5px;  /* Adicionei padding para tornar o clique mais fácil */
-  border-radius: 3px;  /* Adicionei bordas arredondadas */
+  padding: 5px;  
+  border-radius: 3px;
 }
 
 .columntext3 ul li a:hover {
   text-decoration: none;
-  background-color: #555;  /* Adicionei um fundo ao pairar para dar um feedback visual */
+  background-color: #555;
 }
 
 

@@ -62,6 +62,13 @@ document.addEventListener("DOMContentLoaded", function(){
   });
 });
 
+/* rodapé */
+
+document.getElementById('footer-container').addEventListener('click', function() {
+  window.open('https://api.whatsapp.com/send?phone=55996462102', '_blank');
+});
+
+
 
 
 

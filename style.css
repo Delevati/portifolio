@@ -360,16 +360,24 @@ nav ul li a {
 footer {
   background-color: #333;
   color: white;
-  padding: 10px 0;  
+  padding: 0;
   text-align: center;
-  border-top: 3px solid #444; 
+  border-top: 3px solid #444;
+  max-width: 100%; /* Garante que o rodapé ocupe toda a largura */
 }
 
 .footer-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 20px;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Faz com que o .footer-container ocupe toda a largura do rodapé */
+}
+
+.footer-container:hover {
+  background-color: #434343;  /* Nova cor de fundo para o hover */
 }
 
 .project-name h1 {
@@ -380,7 +388,7 @@ footer {
 
 .project-name p {
   margin: 3px 0;  
-  font-size: 14px;  
+  font-size: 20px;  
 }
 
 .columntext3 h2 {

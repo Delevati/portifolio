@@ -206,6 +206,7 @@ nav ul li a {
 .midclass {
     display: flex;
     justify-content: space-between;
+    font-size: 22px;
 }
 
 .columntext {
@@ -226,16 +227,19 @@ nav ul li a {
 
 .columntext li, .columntext2 li {
     margin-top: 10px;
+    font-size: 15px;
 }
 
 .sublist {
     font-size: 12px;  
     list-style-type: none;  
+    font-weight: bold;
 }
 
 .sublist li {
     display: inline;  
     margin-right: 10px;  
+    font-size: 15px;
 }
 
 .sublist li::before {
@@ -316,13 +320,35 @@ nav ul li a {
     margin: auto 20px;
   }
 
-  .vid video {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  /* imagens */
+  .descricaoprojeto2 {
+    margin-top: 20px;
+    font-size: 1.2em;
+    margin: auto 20px;
   }
   
+  h2 {
+    margin-bottom: 10px;
+  }
   
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 40px);
+  }
+  
+  .image-wrapper {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .image-item {
+    max-width: 100%;
+    height: auto;
+  }
+
+
 
 /* RODAPÉ */
 footer {

@@ -326,25 +326,7 @@ nav ul li a {
     font-size: 1.2em;
     margin: auto 20px;
   }
-  .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: calc(100vh - 40px);
-    width: 100%;
-  }
-  
-  .image-wrapper {
-    flex: 1;
-    margin: 10px;
-    text-align: center;
-  }
-  
-  .image-item {
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-  }
+
   
 
 /* RODAPÉ */
@@ -354,7 +336,7 @@ footer {
   padding: 0;
   text-align: center;
   border-top: 3px solid #444;
-  max-width: 100%; /* Garante que o rodapé ocupe toda a largura */
+  max-width: 100%; 
 }
 
 .footer-container {
@@ -364,11 +346,11 @@ footer {
   padding: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  width: 100%; /* Faz com que o .footer-container ocupe toda a largura do rodapé */
+  width: 100%;
 }
 
 .footer-container:hover {
-  background-color: #434343;  /* Nova cor de fundo para o hover */
+  background-color: #434343; 
 }
 
 .project-name h1 {

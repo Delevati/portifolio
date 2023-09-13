@@ -327,6 +327,31 @@ nav ul li a {
     margin: auto 20px;
   }
 
+  .image-container-final {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: relative; 
+  }
+  
+  .image-container-final img {
+    object-fit: contain;
+    margin: 0 5px;
+  }
+  
+  .image-final {
+    height: 42vh; 
+    width: auto;
+    object-fit: contain;
+  }
+  
+  .arrow-icon {
+    font-size: 2rem;
+    margin: 0 5px;
+    color: #333;
+  }
+  
+  
   
 
 /* RODAPÉ */
@@ -405,6 +430,20 @@ footer {
   }
   .text-section {
     overflow: hidden;
+  }
+  .image-container-final {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centraliza horizontalmente */
+  }
+  .image-final {
+    margin-bottom: 10px;  /* Espaço entre a imagem e o ícone */
+
+      height: calc(50vh - 20px);
+      object-fit: cover
+  }
+  .arrow-icon {
+    transform: rotate(90deg);  /* Rotaciona o ícone para apontar para baixo */
   }
 }
 @media (min-width: 769px) {
@@ -518,6 +557,26 @@ footer {
 .image-item {
   width: 100%;
 }
+.image-container-final {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.image-final, .image-final2 {
+  width: 100%; 
+  max-height: 50vh; 
+  object-fit: cover; 
+  margin-bottom: 10px; 
+  margin-top: 0; 
+}
+
+.arrow-icon {
+  transform: rotate(90deg); 
+  margin-top: 0; 
+  margin-bottom: 15px; 
+}
+
 }
 
 @media (max-width: 550px) {

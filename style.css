@@ -415,7 +415,7 @@ footer {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 1024px) {
+@media (max-width: 1090px) {
   body {
     font-size: 14px;
   }

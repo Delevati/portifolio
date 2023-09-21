@@ -202,63 +202,6 @@ nav ul li a {
   box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px red, 0 0 20px red,
     0 0 25px red, 0 0 30px red, 0 0 35px red;
 }
-
-.midclass {
-    display: flex;
-    justify-content: space-between;
-    font-size: 22px;
-}
-
-.columntext {
-    flex: 1;
-    min-width: calc(50% - 20px);  
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.columntext2 {
-    flex: 1;
-    min-width: calc(50% - 20px);  
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 100px;
-    font-size: 1em;
-}
-
-.columntext li, .columntext2 li {
-    margin-top: 10px;
-    font-size: 15px;
-}
-
-.sublist {
-    font-size: 12px;  
-    list-style-type: none;  
-    font-weight: bold;
-}
-
-.sublist li {
-    display: inline;  
-    margin-right: 10px;  
-    font-size: 15px;
-}
-
-.sublist li::before {
-    content: '-';  
-    margin-right: 3px;  
-}
-
-.columntext3 {
-    display: grid;
-    place-items: center;
-    margin: 0;
-      }
-
-.columntext3 h2 p ul li {
-    margin: 0;
-  }
-.columntext3 h2 {
-    margin-bottom: 0;
-  }
       
 
 /* .outputgit {
@@ -321,11 +264,6 @@ nav ul li a {
   }
 
   /* imagens */
-  .descricaoprojeto2 {
-    margin-top: 20px;
-    font-size: 1.2em;
-    margin: auto 20px;
-  }
 
   .image-container-final {
     display: flex;
